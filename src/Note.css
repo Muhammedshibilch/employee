@@ -1,0 +1,184 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #e8f0f8, #f9fafb);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  box-sizing: border-box;
+  background-image: url('/Wave-2.png');
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed; 
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.center-container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin-top: 40px;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.MuiTextField-root {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.MuiOutlinedInput-root {
+  border-radius: 8px !important;
+}
+
+button,
+.btn {
+  border-radius: 5px;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+button:hover,
+.btn:hover {
+  transform: scale(1.05);
+}
+
+button:focus,
+.btn:focus {
+  outline: none;
+}
+
+.btn-success {
+  background-color: #4caf50;
+  color: white;
+}
+
+.btn-danger {
+  background-color: #f44336;
+  color: white;
+}
+
+.btn-success:hover {
+  background-color: #45a049;
+}
+
+.btn-danger:hover {
+  background-color: #e57373;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 30px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th,
+td {
+  padding: 12px 20px;
+  text-align: left;
+  border: 1px solid #ddd;
+  font-size: 16px;
+}
+
+th {
+  background-color: #f0f8ff;
+  font-weight: bold;
+}
+
+tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+tbody td {
+  color: #555;
+}
+
+.modal-content {
+  border-radius: 8px;
+}
+
+.modal-header {
+  border-bottom: 2px solid #eee;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 20px;
+}
+
+.modal-footer .btn-secondary {
+  margin-right: 10px;
+}
+
+.modal-body .MuiTextField-root {
+  margin-bottom: 15px;
+}
+
+button,
+.MuiTextField-root {
+  width: 100%;
+}
+
+.centered-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.centered-form-container .MuiTextField-root {
+  width: 90%;
+}
+
+.modal-content {
+  width: 80%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+.alert {
+  transition: opacity 0.5s ease-in-out;
+  opacity: 1;
+  margin-top: 20px;
+}
+
+.alert-success {
+  background-color: #28a745;
+  color: white;
+}
+.buttons {
+  display: flex;
+  gap: 10px; /* Optional: for spacing between buttons */
+  justify-content: center; /* Optional: to center the buttons horizontally */
+}
+
