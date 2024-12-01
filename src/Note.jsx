@@ -16,7 +16,7 @@ const Note = () => {
   const [alertVisible, setAlertVisible] = useState(false);
 
   useEffect(() => {
-    fetch('https://employe-server-spby.onrender.com/employees')
+    fetch('https://employe-server-z2nm.onrender.com/employees')
       .then(response => response.json())
       .then(data => setEmployees(data))
       .catch(error => console.error('Error fetching data:', error));
@@ -52,7 +52,7 @@ const Note = () => {
     const newEmployee = { username, email, status };
     if (employeeId) newEmployee.id = employeeId;
 
-    fetch('https://employe-server-spby.onrender.com/employees', {
+    fetch('https://employe-server-z2nm.onrender.com/employees', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(newEmployee),
@@ -71,7 +71,7 @@ const Note = () => {
   const handleEditEmployee = () => {
     const updatedEmployee = { username, email, status };
 
-    fetch(`https://employe-server-spby.onrender.com/employees/${employeeId}`, {
+    fetch(`https://employe-server-z2nm.onrender.com/employees/${employeeId}`, {
       method: 'PUT',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(updatedEmployee),
@@ -87,7 +87,7 @@ const Note = () => {
   };
 
   const handleDeleteEmployee = (id) => {
-    fetch(`https://employe-server-spby.onrender.com/employees/${id}`, {
+    fetch(`https://employe-server-z2nm.onrender.com/employees/${id}`, {
       method: 'DELETE',
     })
       .then(() => {
